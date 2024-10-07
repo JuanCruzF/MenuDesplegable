@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Hamburguesa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Container -->
+    <div class="menu-container">
+
+        <div class="hamburguesa" id="hamburguesaBtn" onclick="menuDesplegable()">
+            <span class="material-icons">
+                menu
+            </span>
+        </div>
+        <div class="menu-horizontal"></div>
+        <div class="menu-lateral" id="menuLateral">
+            <div class="menu-item" id="icono1" data-option="inicio" onclick="seleccionarOpcion(1)">
+                <span class="material-icons icon">
+                    home
+                </span>
+                <span class="texto">Inicio</span>
+            </div>
+            <div class="menu-item" id="icono2" data-option="mercado" onclick="seleccionarOpcion(2)">
+                <span class="material-icons icon">
+                    store
+                </span>
+                <span class="texto">Mercado Interno</span>
+            </div>
+            <div class="menu-item" id="icono3" data-option="dark" onclick="seleccionarOpcion(3)">
+                <span class="material-icons icon">
+                    dark_mode
+                </span>
+                <span class="texto">Dark Mode</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
+

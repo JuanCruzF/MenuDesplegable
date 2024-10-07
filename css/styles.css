@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.hamburguesa {
+    font-size: 30px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3f51b5;
+    color: white;
+    text-align: center;
+    width: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.menu-lateral {
+    width: 60px;
+    transition: width 0.3s ease;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    height: 100vh;
+    padding-top: 54px;
+}
+
+.menu-horizontal {
+    height: 0; 
+    width: 100%;
+    background-color: #3f51b5;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    padding-top: 54px;
+}
+
+.menu-lateral.abrir {
+    width: 200px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #ddd;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.texto {
+    display: none;
+}
+
+.menu-lateral.abrir .texto {
+    display: inline-block;
+}
+
+.seleccionado {
+    background-color: #3f51b5;
+    color: white;
+}
+
+.ocultar {
+    display: none;
+}
